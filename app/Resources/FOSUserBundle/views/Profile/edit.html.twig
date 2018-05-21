@@ -1,0 +1,22 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+{% block title %}Edycja konta{% endblock title %}
+{% block header %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ asset('img/home-bg.jpg') }}')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Edycja konta</h1>
+                        <span class="subheading">Zmień dane użytkownika</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock header %}
+
+{% block fos_user_content %}
+{% include "FOSUserBundle:Profile:edit_content.html.twig" %}
+{% endblock fos_user_content %}
